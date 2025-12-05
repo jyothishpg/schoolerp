@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="sidebar">
+
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="sidebar-wrapper">
+                <div class="sidebar-container">
+                    <div class="purple-shape">
+                    </div>
+                    <ul class="main-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="bi bi-microsoft"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-people-fill"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-person-walking"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-graph-up-arrow"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-trophy-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-journal-text"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-gear-fill"></i></a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-trophy-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-journal-text"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-gear-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-wrapper">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="content-top-bar">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="search-container">
+                                    <input type="text" class="form-control search-input" placeholder="Search...">
+                                    <i class="bi bi-search search-icon"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items0center">
+                                <div>
+                                    <input type="text" id="myDatepicker" class="form-control datepicker">
+                                </div>
+                                <div>
+                                    <div class="notification">
+                                        <a href="#" class="notification-icon">
+                                            <img src="images/bell.png" alt="">
+                                            <span class="count">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="student-profile">
+                        <div>
+                            <div class="profile-icon">
+                                <img src="images/profile.png">
+                            </div>
+                        </div>
+                        <div>
+                            <h3><b>Radhakrishan KS</b></h3>
+                            <div class="dropdown">
+                                <button class="btn-profile dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-fill"></i>
+                                    Sanjay Randhakrishan
+                                </button>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <p>Class : <b>VII B</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="main-bg-white">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="page-title">Transport Tracking</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="info-box">
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <i class="bi bi-exclamation-triangle me-1"></i> Bus is running 5 minutes behind scheduled time
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="map-wrapper position-relative">
+                                     <iframe class="map-dim" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.0745238944123!2d76.3584346752772!3d10.01070309009521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080df70018d517%3A0x9e6298c66e914e36!2sTouchworld%20Tech%20Systems%20LLP!5e0!3m2!1sen!2sin!4v1764925666860!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                     <div class="expected-time">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <h3>Expecting Reaching time - <span>8:15 AM</span></h3>
+                                                <div class="badge badge-outline">
+                                                    12 Mins remaining
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Currently at:</p>
+                                                <h4>Siglap Road</h4>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 60%;">
+                                                <div class="progress-handler">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="border-20">
+                        <div class="row mt-2">
+                            <div class="col-md-12  mb-3 mt-4">
+
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="profile-pic">
+                                                <img src="images/user.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h4 class="card-title">John Smith</h4>
+                                                <h5 class="card-sub-title mb-0">Nissan NV350 Urvan</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="total-starts">
+                                            <i class="bi bi-star-fill"></i>4.90
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="location-list livetracking">
+                                        <li class="current-location">
+                                            <h5>Current Location</h5>
+                                            <h4>Siglap Road</h4>
+                                        </li>
+                                        <li>
+                                            <h5>Pickup Location</h5>
+                                            <h4>Cendar Avenue</h4>
+                                        </li>
+                                        <li class="end">
+                                            <h5>Reached at Location</h5>
+                                            <h4>Al Ameen Public School</h4>
+                                        </li>
+                                    </ul>
+                                    <div class="bus-details">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <div class="d-flex align-items-center justify-content-start">
+                                                    <div>
+                                                        <i class="bi bi-speedometer2"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p>Speed</p>
+                                                        <h2>40 Km/H</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center justify-content-start">
+                                                    <div>
+                                                        <i class="bi bi-bus-front-fill"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p>Bus Number</p>
+                                                        <h2>XYZ456</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap">
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

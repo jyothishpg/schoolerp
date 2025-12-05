@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="sidebar">
+
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="sidebar-wrapper">
+                <div class="sidebar-container">
+                    <div class="purple-shape">
+                    </div>
+                    <ul class="main-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="bi bi-microsoft"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-people-fill"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-person-walking"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-graph-up-arrow"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-trophy-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-journal-text"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-gear-fill"></i></a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-trophy-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-journal-text"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-gear-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-wrapper">
+
+            <div class="row">
+                <div class="col-md-8">
+                     <div class="content-top-bar">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <div class="search-container">
+                                                <input type="text" class="form-control search-input"
+                                                    placeholder="Search...">
+                                                <i class="bi bi-search search-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items0center">
+                                            <div>
+                                                <input type="text" id="myDatepicker" class="form-control datepicker">
+                                            </div>
+                                            <div>
+                                                <div class="notification">
+                                                    <a href="#" class="notification-icon">
+                                                        <img src="images/bell.png" alt="">
+                                                        <span class="count">2</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="student-profile mb-4">
+                            <div>
+                                <div class="profile-icon">
+                                    <img src="images/profile.png">
+                                </div>
+                            </div>
+                            <div>
+                                <h3><b>Radhakrishan KS</b></h3>
+                                <div class="dropdown">
+                                    <button class="btn-profile dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-person-fill"></i>
+                                        Sanjay Randhakrishan
+                                    </button>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <p>Class : <b>VII B</b></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="main-bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="welcome-box">
+                                    <h2>Welcome back, RADHAKRISHAN!!</h2>
+                                    <h3>Digital Safety Handbook</h3>
+                                    <div class="d-flex">
+                                        <a href="#" class="btn-white">Parents</a>
+                                        <a href="#" class="btn-white">Early Child Educator</a>
+                                    </div>
+                                    <img src="images/welcome.png" alt="" class="welcom-thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="todays-status">
+                                    <div class="d-lg-flex justify-content-between align-items-center">
+                                        <div>
+                                            <div class="d-lg-flex">
+                                                <div style="min-width: 40px;">
+                                                    <img src="images/tick-circle.png" alt="" class="me-2">
+                                                </div>
+                                                
+                                                <div>
+                                                    <h5>Today’s Status of Sanjay</h5>
+                                                    <h4>Present </h4>
+                                                </div>
+                                            </div>
+                                            <h5><img src="images/time.png"> Update : Today, 31-11-2025 8:30am</h5>
+                                        </div>
+                                        <div>
+                                            <h5>Overall Attendance</h5>
+                                            <h2>92.08%</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card student-info-card">
+                                    <div class="text-center">
+                                        <div class="circle primary">
+                                            <img src="images/notice-board.png" alt="">
+                                        </div>
+                                        <h3>Noticeboard</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card student-info-card">
+                                    <div class="text-center">
+                                        <div class="circle danger">
+                                            <img src="images/digital.png" alt="">
+                                        </div>
+                                        <h3>Digital Resources</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card student-info-card">
+                                    <div class="text-center">
+                                        <div class="circle info">
+                                            <img src="images/communication.png" alt="">
+                                        </div>
+                                        <h3>Communications</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card student-info-card">
+                                    <div class="text-center">
+                                        <div class="circle warning">
+                                            <img src="images/weekly-plan.png" alt="">
+                                        </div>
+                                        <h3>Weekly Plan</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12  mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Event and Posters</h4>
+                                        <h5 class="card-sub-title">All school events and poster notifications.</h5>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="view-all">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card events-card">
+                                    <img src="images/event-1.png">
+
+                                    <div class="date">
+                                        <h6>12</h6>
+                                        <p>DEC</p>
+                                    </div>
+                                    <div class="event-footer d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h6>School Sports Fest</h6>
+                                            <p>Join us for Annual Day as we celebrate our students' talents and
+                                                achievements!</p>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="arrow-right">
+                                                <img src="images/arrow-white.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card events-card position-relative">
+                                    <img src="images/event-2.png">
+                                    <div class="video-thumb">
+                                        <img src="images/video.png">
+                                    </div>
+                                    <div class="date">
+                                        <h6>12</h6>
+                                        <p>DEC</p>
+                                    </div>
+                                    <div class="event-footer d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h6>Kids Sports Day</h6>
+                                            <p>Join us for Annual Day as we celebrate our students' talents and
+                                                achievements!</p>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="arrow-right">
+                                                <img src="images/arrow-white.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card events-card position-relative">
+                                    <img src="images/event-3.png">
+                                    <div class="video-thumb">
+                                        <img src="images/video.png">
+                                    </div>
+                                    <div class="date">
+                                        <h6>27</h6>
+                                        <p>Nov</p>
+                                    </div>
+                                    <div class="event-footer d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h6>Awareness Class</h6>
+                                            <p>Join us for Annual Day as we celebrate our students' talents and
+                                                achievements!</p>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="arrow-right">
+                                                <img src="images/arrow-white.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card events-card position-relative">
+                                    <img src="images/event-4.png">
+                                    <!-- <div class="video-thumb">
+                                    <img src="images/video.png">
+                                </div> -->
+                                    <div class="date">
+                                        <h6>12</h6>
+                                        <p>DEC</p>
+                                    </div>
+                                    <div class="event-footer d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h6>Awareness Class</h6>
+                                            <p>Join us for Annual Day as we celebrate our students' talents and
+                                                achievements!</p>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="arrow-right">
+                                                <img src="images/arrow-white.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12  mb-3">
+                                <div class="card notification-card">
+                                    <div class="d-lg-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h4 class="card-title">Notifications</h4>
+                                            <h5 class="card-sub-title">All day notifications will be shown here</h5>
+                                        </div>
+                                        <div>
+                                            <div class="toggle">
+                                                <div class="option active">All</div>
+                                                <div class="option">Unread</div>
+                                                <div class="slider"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="notification-list">
+                                        <li>
+                                            <div class="d-flex align-items-center">
+                                                <span class="icons"><img src="images/star.png"></span><strong>Weather
+                                                    advisory – </strong>Classes will be shifted online due to heavy
+                                                rainfall.
+                                            </div>
+                                            <div class="date-listed">02 mins ago</div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center">
+                                                <span class="icons"><img src="images/info.png"></span><strong>Transport
+                                                    delay – </strong>School bus is running late due to traffic.
+                                            </div>
+                                            <div class="date-listed">02 mins ago</div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center">
+                                                <span class="icons"><img src="images/noti.png"></span><strong>New
+                                                    circular uploaded – </strong>Please check the latest update from the
+                                                school management.
+                                            </div>
+                                            <div class="date-listed">02 mins ago</div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center">
+                                                <span class="icons"><img src="images/horn.png"></span><strong>Event
+                                                    countdown – </strong>Only 2 days left for the Annual Day
+                                                celebration!
+                                            </div>
+                                            <div class="date-listed">02 mins ago</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="border-20">
+                        <div class="row mt-4">
+                            <div class="col-md-12  mb-3 pt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Student Behavior Score</h4>
+                                        <h5 class="card-sub-title mb-0">Overall behavior score of the student</h5>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="view-all">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="overall-history">
+                                    <div class="d-lg-flex align-items-center justify-content-between">
+                                        <div class="border-right">
+                                            <div class="history-icon">
+                                                <img src="images/performance.png" alt="">
+                                            </div>
+
+                                                <h3>Overall Performance of Sanjay</h3>
+                                                <h2>A+ Grade<span>92.96%</span></h2>
+                                        </div>
+                                        <div>
+                                            <div class="history-icon">
+                                                <img src="images/behaviour.png" alt="">
+                                            </div>
+
+                                                <h3>Overall Behavior of Sanjay</h3>
+                                                <h2>4.8<span>
+                                                    <img src="images/star-y.png">
+                                                    <img src="images/star-y.png">
+                                                    <img src="images/star-y.png">
+                                                    <img src="images/star-y.png">
+                                                    <img src="images/star-w.png">
+                                                </span></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-sm-12">
+                                <div class="card location">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h4 class="card-title">Current Location</h4>
+                                            <h5 class="card-sub-title mb-0">Current Location of the student & History</h5>
+                                        </div>
+                                        <div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary" 
+                                                        type="button" 
+                                                        data-bs-toggle="dropdown">
+                                                    <img src="images/three-dots.png" alt="">
+                                                </button>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <ul class="location-list">
+                                        <li>
+                                            <h5>Current Location</h5>
+                                            <h4>Siglap Road</h4>
+                                            <h6>At 07:53am</h6>
+                                        </li>
+                                        <li>
+                                            <h5>Pickup Location</h5>
+                                            <h4>Cendar Avenue</h4>
+                                            <h6>At 08:06am</h6>
+                                        </li>
+                                        <li class="end">
+                                            <h5>Reached at Location</h5>
+                                            <h4>Al Ameen Public School</h4>
+                                            <h6>At 08:25am</h6>
+                                        </li>
+                                    </ul>
+                                    </div>                     
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-4">
+                            <div class="col-sm-12">
+                                <div class="card transparent">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h4 class="card-title">Fee Details</h4>
+                                            <h5 class="card-sub-title mb-0">Current Fee pending status</h5>
+                                        </div>
+                                        <div>
+                                           <a href="#" class="view-all">View All</a>
+                                        </div>
+                                    </div> 
+
+
+                                        <div class="total-fees">
+                                           <div class="d-lg-flex align-items-center justify-content-between">
+                                            <div>
+                                                 <img src="images/fee.png" class="icon">
+                                            <h3>Total Fees</h3>
+                                            <h2>AED 9,202.92</h2>
+                                            <h4><img src="images/calendar.png" class="me-2"> Due : 15 Jun 2025</h4>
+                                            </div>
+                                            <a href="#" class="btn-pay">Pay Now</a>
+                                           </div>
+                                        </div>
+                                    </div>                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
