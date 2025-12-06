@@ -3,6 +3,11 @@ $("#myDatepicker").datepicker({
   autoclose: true, // Close picker when date is selected
   todayHighlight: true, // Highlight today's date
 });
+$(".myDatepicker").datepicker({
+  format: "dd/mm/yyyy", // Customize date format
+  autoclose: true, // Close picker when date is selected
+  todayHighlight: true, // Highlight today's date
+});
 const options = document.querySelectorAll(".toggle .option");
 const slider = document.querySelector(".toggle .slider");
 

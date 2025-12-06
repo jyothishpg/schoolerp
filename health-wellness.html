@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="sidebar">
+
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="sidebar-wrapper">
+                <div class="sidebar-container">
+                    <div class="purple-shape">
+                    </div>
+                    <ul class="main-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="bi bi-microsoft"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-people-fill"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-person-walking"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-graph-up-arrow"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-trophy-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-journal-text"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-gear-fill"></i></a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-trophy-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-journal-text"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="bi bi-gear-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-wrapper">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="content-top-bar">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="search-container">
+                                    <input type="text" class="form-control search-input" placeholder="Search...">
+                                    <i class="bi bi-search search-icon"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items0center">
+                                <div>
+                                    <input type="text" id="myDatepicker" class="form-control datepicker">
+                                </div>
+                                <div>
+                                    <div class="notification">
+                                        <a href="#" class="notification-icon">
+                                            <img src="images/bell.png" alt="">
+                                            <span class="count">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="student-profile">
+                        <div>
+                            <div class="profile-icon">
+                                <img src="images/profile.png">
+                            </div>
+                        </div>
+                        <div>
+                            <h3><b>Radhakrishan KS</b></h3>
+                            <div class="dropdown">
+                                <button class="btn-profile dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-fill"></i>
+                                    Sanjay Randhakrishan
+                                </button>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <p>Class : <b>VII B</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="main-bg-white">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="page-title">Health & Wellness</h1>
+                                <h2 class="page-sub-title">View and manage your child’s health records, medical
+                                    observations, and wellness notifications from the school clinic</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="health-wellness-wrap">
+                                    <div class="tab-transparent">
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <button class="nav-link active" id="nav-clinical-visit-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-clinical-visit"
+                                                    type="button" role="tab" aria-controls="nav-clinical-visit"
+                                                    aria-selected="true">Clinical Visits</button>
+                                                <button class="nav-link" id="nav-medication-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-medication" type="button" role="tab"
+                                                    aria-controls="nav-medication"
+                                                    aria-selected="false">Medications</button>
+                                                <button class="nav-link" id="nav-immunization-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-immunization" type="button" role="tab"
+                                                    aria-controls="nav-immunization"
+                                                    aria-selected="false">Immunizations</button>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content fs-10" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-clinical-visit"
+                                                role="tabpanel" aria-labelledby="nav-all-tab">
+                                                <div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon">
+                                                                    <i class="bi bi-mortarboard-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h4><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span></h4>
+                                                                    <p class="text-danger">Temperature: 101°F</p>
+                                                                    <p><i class="bi bi-journals"></i>Care Provided:</p>
+                                                                    <p>Temperature checked, rest provided, parent
+                                                                        contacted for pickup</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5><i class="bi bi-person me-2"></i>Nurse Sarah Miller</h5>
+                                                            <div class="d-flex justify-content-end">
+                                                                <div class="status danger">
+                                                                    Sent Home
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon">
+                                                                    <i class="bi bi-mortarboard-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h4><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span></h4>
+                                                                    <p class="text-danger">Temperature: 101°F</p>
+                                                                    <p><i class="bi bi-journals"></i>Care Provided:</p>
+                                                                    <p>Temperature checked, rest provided, parent
+                                                                        contacted for pickup</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5><i class="bi bi-person me-2"></i>Nurse Sarah Miller</h5>
+                                                            <div class="d-flex justify-content-end">
+                                                                <div class="status danger">
+                                                                    Sent Home
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon">
+                                                                    <i class="bi bi-mortarboard-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h4><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span></h4>
+                                                                    <p class="text-danger">Temperature: 101°F</p>
+                                                                    <p><i class="bi bi-journals"></i>Care Provided:</p>
+                                                                    <p>Temperature checked, rest provided, parent
+                                                                        contacted for pickup</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5><i class="bi bi-person me-2"></i>Nurse Sarah Miller</h5>
+                                                            <div class="d-flex justify-content-end">
+                                                                <div class="status warning">
+                                                                    Sent Home
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon">
+                                                                    <i class="bi bi-mortarboard-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h4><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span></h4>
+                                                                    <p class="text-danger">Temperature: 101°F</p>
+                                                                    <p><i class="bi bi-journals"></i>Care Provided:</p>
+                                                                    <p>Temperature checked, rest provided, parent
+                                                                        contacted for pickup</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5><i class="bi bi-person me-2"></i>Nurse Sarah Miller</h5>
+                                                            <div class="d-flex justify-content-end">
+                                                                <div class="status warning">
+                                                                    Sent Home
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon">
+                                                                    <i class="bi bi-mortarboard-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h4><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span></h4>
+                                                                    <p class="text-danger">Temperature: 101°F</p>
+                                                                    <p><i class="bi bi-journals"></i>Care Provided:</p>
+                                                                    <p>Temperature checked, rest provided, parent
+                                                                        contacted for pickup</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5><i class="bi bi-person me-2"></i>Nurse Sarah Miller</h5>
+                                                            <div class="d-flex justify-content-end">
+                                                                <div class="status danger">
+                                                                    Sent Home
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon">
+                                                                    <i class="bi bi-mortarboard-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h4><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span></h4>
+                                                                    <p class="text-danger">Temperature: 101°F</p>
+                                                                    <p><i class="bi bi-journals"></i>Care Provided:</p>
+                                                                    <p>Temperature checked, rest provided, parent
+                                                                        contacted for pickup</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5><i class="bi bi-person me-2"></i>Nurse Sarah Miller</h5>
+                                                            <div class="d-flex justify-content-end">
+                                                                <div class="status warning">
+                                                                    Sent Home
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-medication" role="tabpanel"
+                                                aria-labelledby="nav-medication-tab">
+                                                <div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon text-danger">
+                                                                    <i class="bi bi-bag-plus-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Asthma Inhaler (Albuterol)</h3>
+                                                                    <p class="text-danger">Dosage: 2 puffs</p>
+                                                                    <p><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span>
+                                                                    </p>
+                                                                    <p><i class="bi bi-journals"></i>Reason: Breathing
+                                                                        difficulty during PE period</p>
+                                                                    <p>Notes: Student monitored for 20 minutes; symptoms
+                                                                        improved.</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i class="bi bi-person me-2"></i>Nurse
+                                                                Sarah Miller</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon text-danger">
+                                                                    <i class="bi bi-bag-plus-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Paracetamol (Acetaminophen)</h3>
+                                                                    <p class="text-danger">Dosage: 250 mg</p>
+                                                                    <p><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span>
+                                                                    </p>
+                                                                    <p><i class="bi bi-journals"></i>Reason: Fever
+                                                                        (101°F)
+                                                                    </p>
+                                                                    <p>Notes: Temperature rechecked at 1:45 PM
+                                                                        (100.2°F).
+                                                                        Parent notified.</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i class="bi bi-person me-2"></i>Nurse
+                                                                Sarah Miller</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon text-danger">
+                                                                    <i class="bi bi-bag-plus-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Cetirizine (Allergy Medication)</h3>
+                                                                    <p class="text-danger">Dosage: 5 ml syrup</p>
+                                                                    <p><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span>
+                                                                    </p>
+                                                                    <p><i class="bi bi-journals"></i>Reason: Mild
+                                                                        allergic
+                                                                        reaction (sneezing, itchy eyes)</p>
+                                                                    <p>Notes: Student returned to class after symptoms
+                                                                        reduced.</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i class="bi bi-person me-2"></i>Nurse
+                                                                Sarah Miller</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon text-danger">
+                                                                    <i class="bi bi-bag-plus-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Asthma Inhaler (Albuterol)</h3>
+                                                                    <p class="text-danger">Dosage: 2 puffs</p>
+                                                                    <p><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span>
+                                                                    </p>
+                                                                    <p><i class="bi bi-journals"></i>Reason: Breathing
+                                                                        difficulty during PE period</p>
+                                                                    <p>Notes: Student monitored for 20 minutes; symptoms
+                                                                        improved.</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i class="bi bi-person me-2"></i>Nurse
+                                                                Sarah Miller</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon text-danger">
+                                                                    <i class="bi bi-bag-plus-fill"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Asthma Inhaler (Albuterol)</h3>
+                                                                    <p class="text-danger">Dosage: 2 puffs</p>
+                                                                    <p><i class="bi bi-calendar3"></i><span>May
+                                                                            29,2025</span><i
+                                                                            class="bi bi-clock"></i><span>10:30
+                                                                            AM</span>
+                                                                    </p>
+                                                                    <p><i class="bi bi-journals"></i>Reason: Breathing
+                                                                        difficulty during PE period</p>
+                                                                    <p>Notes: Student monitored for 20 minutes; symptoms
+                                                                        improved.</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i class="bi bi-person me-2"></i>Nurse
+                                                                Sarah Miller</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="nav-immunization" role="tabpanel"
+                                                aria-labelledby="nav-immunization-tab">
+                                                <div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon danger">
+                                                                    <i class="bi bi-shield-fill-plus"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>DTP (Diphtheria, Tetanus, Pertussis)</h3>
+                                                                    <p><i class="bi bi-calendar-check"></i><span>Aug 10,
+                                                                            2024</span>
+                                                                    </p>
+                                                                    <span class="badge-medication"><i
+                                                                            class="bi bi-calendar-check me-2"></i>Up to
+                                                                        date</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i
+                                                                    class="bi bi-person me-2"></i>School Health Center
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon danger">
+                                                                    <i class="bi bi-shield-fill-plus"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>MMR (Measles, Mumps, Rubella)</h3>
+                                                                    <p><i class="bi bi-calendar-check"></i><span>Aug 10,
+                                                                            2024</span>
+                                                                    </p>
+                                                                    <span class="badge-medication"><i
+                                                                            class="bi bi-calendar-check me-2"></i>Up to
+                                                                        date</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i
+                                                                    class="bi bi-person me-2"></i>County Health Clinic
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon danger">
+                                                                    <i class="bi bi-shield-fill-plus"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Varicella (Chickenpox)</h3>
+                                                                    <p><i class="bi bi-calendar-check"></i><span>Aug 10,
+                                                                            2024</span>
+                                                                    </p>
+                                                                    <span class="badge-medication"><i
+                                                                            class="bi bi-calendar-check me-2"></i>Up to
+                                                                        date</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i
+                                                                    class="bi bi-person me-2"></i>School Health Center
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon danger">
+                                                                    <i class="bi bi-shield-fill-plus"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Td Booster (Tetanus & Diphtheria)</h3>
+                                                                    <p><i class="bi bi-calendar-check"></i><span>Aug 10,
+                                                                            2024</span>
+                                                                    </p>
+                                                                    <span class="badge-medication"><i
+                                                                            class="bi bi-calendar-check me-2"></i>Up to
+                                                                        date</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i
+                                                                    class="bi bi-person me-2"></i>School Health Center
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-start justify-content-between mb-4">
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="icon danger">
+                                                                    <i class="bi bi-shield-fill-plus"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>DTP (Diphtheria, Tetanus, Pertussis)</h3>
+                                                                    <p><i class="bi bi-calendar-check"></i><span>Aug 10,
+                                                                            2024</span>
+                                                                    </p>
+                                                                    <span class="badge-medication"><i
+                                                                            class="bi bi-calendar-check me-2"></i>Up to
+                                                                        date</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-normal"><i
+                                                                    class="bi bi-person me-2"></i>School Health Center
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="border-20">
+                        <div class="row mt-2">
+                            <div class="col-md-12  mb-3 mt-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Alerts</h4>
+                                        <h5 class="card-sub-title mb-0">Informations about your child's health updates
+                                        </h5>
+                                    </div>
+                                    <div class="dot-dropdown">
+                                        <div class="dropdown">
+                                            <button class="btn dots" data-bs-toggle="dropdown">
+                                                <img src="images/three-dots.png" alt="">
+                                            </button>
+
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <div class="d-flex align-items-start justify-content-start">
+                                        <div>
+                                            <div class="icon">
+                                                <i class="bi bi-bell-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3>Child needs to be picked up</h3>
+                                            <p>Emma has a fever of 101°F. Please pick her up from the school clinic</p>
+                                            <p><i class="bi bi-clock"></i> Today, 10:45 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    <div class="d-flex align-items-start justify-content-start">
+                                        <div>
+                                            <div class="icon">
+                                                <i class="bi bi-bell-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3>Medication administered</h3>
+                                            <p>Emma has a fever of 101°F. Please pick her up from the school clinic</p>
+                                            <p><i class="bi bi-clock"></i> Today, 11:32 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    <div class="d-flex align-items-start justify-content-start">
+                                        <div>
+                                            <div class="icon">
+                                                <i class="bi bi-bell-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3>Immunization due soon</h3>
+                                            <p>Emma has a fever of 101°F. Please pick her up from the school clinic</p>
+                                            <p><i class="bi bi-clock"></i> Yesterday, 9:00 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-12  mb-3 mt-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Known Allergies</h4>
+                                        <h5 class="card-sub-title mb-0">Important allergy information and emergency
+                                            protocols</h5>
+                                    </div>
+                                    <div class="dot-dropdown">
+                                        <div class="dropdown">
+                                            <button class="btn dots" data-bs-toggle="dropdown">
+                                                <img src="images/three-dots.png" alt="">
+                                            </button>
+
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="d-flex align-items-start justify-content-start">
+                                            <div>
+                                                <div class="icon">
+                                                    <i class="bi bi-bell-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Peanuts</h3>
+                                                <p>Food allergy</p>
+                                                <p class="lightly-bold"><i class="bi bi-graph-up-arrow"></i> Reaction
+                                                </p>
+                                                <p>Anaphylaxis - difficulty breathing, swelling, hives</p>
+                                                <p class="lightly-bold"><i class="bi bi-capsule-pill"></i>Treatment
+                                                    Protocol:</p>
+                                                <p>EpiPen (0.3mg) available in school clinic</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge danger">Severe</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="d-flex align-items-start justify-content-start">
+                                            <div>
+                                                <div class="icon">
+                                                    <i class="bi bi-bell-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Bee Stings</h3>
+                                                <p>Environmental allergy</p>
+                                                <p class="lightly-bold"><i class="bi bi-graph-up-arrow"></i> Reaction
+                                                </p>
+                                                <p>Severe local swelling, hives</p>
+                                                <p class="lightly-bold"><i class="bi bi-capsule-pill"></i>Treatment
+                                                    Protocol:</p>
+                                                <p>Antihistamine (Benadryl) and monitor closely, contact parent</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge danger">Severe</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-request" id="request-a-leave" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header d-block">
+                    <h5 class="modal-title text-center">Leave Request Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body leave-form">
+                    <div class="mb-3">
+                        <label class="form-label mb-2">Name</label>
+                        <select class="form-select">
+                            <option>Sarah Johnson - ID0879BE01 </option>
+                            <option>Sarah - ID0879BE02 </option>
+                            <option>Sarah Johnson - ID0879BE03 </option>
+                            <option>Sarah - ID0879BE04 </option>
+                            <option>Sarah - ID0879BE05 </option>
+                            <option>Sarah Johnson - ID0879BE06 </option>
+                        </select>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                        <label class="form-label">Duration </label>
+                        <div>
+                            <input class="form-check-input" type="radio" name="gender" id="halfday">
+                            <label class="form-check-label" for="female">Half Day</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="radio" name="gender" id="fullday">
+                            <label class="form-check-label" for="female">Full Day</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label  mb-2">Day</label>
+                        <input type="text" class="form-control date myDatepicker" placeholder="date">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label  mb-2">Reason</label>
+                        <textarea class="form-control" rows="3">
+
+            </textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
